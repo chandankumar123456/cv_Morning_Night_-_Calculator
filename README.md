@@ -25,7 +25,7 @@ pip install opencv-python matplotlib numpy
 1. **Prepare Video**: Place your video file in the project directory, update the filename in the script, or pass it as an argument.
 2. **Run the Script**:
    ```bash
-   python script_name.py
+   python smorning_night_percentage_calculator.py
 3. **View Results**: The script displays each frame in HSV color space. After processing, you’ll see a heatmap of brightness levels and a summary of "Morning" vs. "Night" frame percentages.
 
 ```markdown
