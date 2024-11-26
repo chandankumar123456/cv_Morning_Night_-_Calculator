@@ -1,12 +1,33 @@
-# This is Assignment 1
-# Name Of Author : Chandan Kumar
-# This Script will convert an RGB Video to HSV Video
-# Then it takes each frame and calculates H, S, V
-# The Average is taken out from each color channel
-# The Value Channel is rounded up and an image is made by merging them
-# We wii get an intuition on how the image looks
-# If <70 it is night and >= 70 it is morning/day
-# Percentage is calculated 
+"""
+Assignment 1: RGB to HSV Video Conversion and Brightness Classification
+
+Author: Chandan Kumar
+
+Description:
+    This script converts an RGB video to the HSV (Hue, Saturation, Value) color space.
+    It processes each frame to calculate the Hue (H), Saturation (S), and Value (V) components.
+    The average value for each color channel (H, S, V) is computed across all frames. 
+    The Value (V) channel is then rounded, and the frames are merged to visualize the transformation.
+
+    The frames are classified based on the brightness (V channel):
+        - If V < 70: Classified as "Night"
+        - If V >= 70: Classified as "Morning/Day"
+    The script calculates the percentage of frames in each category and provides a visual representation.
+
+Parameters:
+    - input_video (str): Path to the input RGB video file.
+    - output_video (str): Path to save the resulting HSV video.
+    
+Returns:
+    - A video file with HSV frames and the calculated percentages for "Morning" and "Night".
+
+Usage:
+    1. Prepare the input video file.
+    2. Run the script to convert it to HSV and classify frames.
+    3. View the results and the percentage classification of "Morning" vs. "Night".
+
+"""
+
 
 import numpy as np
 import cv2 
