@@ -19,19 +19,20 @@ To run this project, ensure you have the following installed:
 Install libraries using:
 ```bash
 pip install opencv-python matplotlib numpy
+```
 
-```markdown
-### Usage
+## 🔧 Usage
 1. **Prepare Video**: Place your video file in the project directory, update the filename in the script, or pass it as an argument.
 2. **Run the Script**:
    ```bash
-   python smorning_night_percentage_calculator.py
+   python morning_night_percentage_calculator.py
 3. **View Results**: The script displays each frame in HSV color space. After processing, you’ll see a heatmap of brightness levels and a summary of "Morning" vs. "Night" frame percentages.
 
-```markdown
 ### 📸 Example Output
 - **HSV Frame Conversion**: Example of a video frame converted to HSV color space.
+![HSV Frame](images/HSV_fram.png)
 - **Brightness Heatmap**: A heatmap representing brightness levels across frames, giving a visual summary of brightness variations throughout the video.
+![Brightness Heatmap](images/heatmap.png)
 ## 🧩 Code Structure
 - **`rgb_to_hsv(video_path)`**: Converts frames to HSV and extracts the H, S, and V channels.
 - **`average_and_round_hsv(H, S, V)`**: Computes the average HSV values across frames.
